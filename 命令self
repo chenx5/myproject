@@ -1,0 +1,97 @@
+chattr 
+Linux chattr命令
+Linux 命令大全 Linux 命令大全
+Linux chattr命令用于改变文件属性。
+这项指令可改变存放在ext2文件系统上的文件或目录属性，这些属性共有以下8种模式：
+a：让文件或目录仅供附加用途。
+b：不更新文件或目录的最后存取时间。
+c：将文件或目录压缩后存放。
+d：将文件或目录排除在倾倒操作之外。
+i：不得任意更动文件或目录。
+s：保密性删除文件或目录。
+S：即时更新文件或目录。
+u：预防意外删除。
+语法
+chattr [-RV][-v<版本编号>][+/-/=<属性>][文件或目录...]
+
+chattr +a /var/log/messages
+
+umask
+echo $PATH
+
+查询对方开启哪些端口
+nmap ip
+nmap -A ip 1~65535
+nmap -v -A 176.121.213.86 -p 1-65530
+
+who 
+pkill -9 -t pts/6
+桌面背景 
+vim /etc/dconf/db/local.d/00-background 
+dconf update
+
+https://www.linuxidc.com/Linux/2017-09/146980.htm  VNC 
+https://www.linuxidc.com/Linux/2017-05/143346.htm
+
+生存ssh秘钥,无密码远程管理
+ssh-keygen -f /root/.ssh/id_rsa -N ''
+ssh-copy-id 192.168.2.100
+
+https://github.com/
+
+内部命令
+外部命令
+enable -n cd 取消cd作用
+enable cd 
+别名
+hash  
+
+别名    植入病毒   打ls  先启动病毒程序再执行真实的ls命令
+fcitx
+
+挂载ntfs解决方案
+https://www.linuxidc.com/Linux/2017-08/146365.htm
+mount -t ntfs-3g /dev/sdb1 /opt/haha
+
+"cp -r -v dir1 dir2 cp -a -d -v dir1 dir2 可以多关.注《Linux就该这么学》这本书,我都是从这里面学到的 "
+
+vim /etc/httpd/conf/httpd.conf
+ServerName xxxx 打开
+
+TYPE=Ethernet   网卡类型.以太网
+BOOTPROTO=none (手动配置IP)   /dhcp 自动获取
+NAME=eth0网卡名
+DEVICE=eth0网卡名
+ONBOOT=yes  是否开机自启动
+管理网卡的程序 
+       network     NetworkManager
+
+lsattr 文件   查看是都具有i权限
+chattr  -i  文件   可以取消i权限
+
+第一步：创建虚拟机镜像
+
+qemu-img create -f raw /images/vm1.raw 8G
+1
+qmeu-img创建的镜像是一个稀疏文件，也就是说刚创建出来的文件并没有8G，它会随着数据的增多慢慢增加，直到8G
+
+nfsnobody
+
+/usr/bin/ntfs-3g /dev/sdb1 /mnt/
+
+
+teamviewer依赖包
+http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/q/qt5-qtwebkit-5.9.1-1.el7.x86_64.rpm
+
+vim /etc/sudoers
+student 追加 /usr/bin/bash
+
+pgp公司 做的非对称加密
+
+/etc/init.d/functions
+
+umount: /mnt/sda5：目标忙。
+ fuser -l /mnt/sda5/        lsof /mnt/sda5/
+ fuser /mnt/sda5/
+ps -aux |grep 12634c
+kill -9 12634
